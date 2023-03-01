@@ -1,0 +1,153 @@
+body {
+  background-color: black;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 4vh;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 1.5rem 1.5rem;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    hsl(0, 1%, 35%) 0,
+    hsl(60, 2%, 35%) 10%,
+    hsl(0, 100%, 100%) 20%
+  );
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 300px;
+  }
+  100% {
+    background-position: 345px;
+  }
+}
+
+h4 {
+  background-color: black;
+
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+p {
+  color: whitesmoke;
+}
+.mainLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+
+.footerLogo {
+  max-width: 15%;
+  max-height: auto;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+
+  background-color: #0e0d0d;
+  border-radius: 20px;
+  padding-left: 0px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1.5rem;
+  font-size: 20px;
+}
+
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:visited,
+a:active {
+  color: whitesmoke;
+}
+a:hover {
+  color: white;
+  text-shadow: 0 0 5px #fbffff, 0 0 25px #ffffff, 0 0 50px #ffffff,
+    0 0 100px #ffffff;
+}
+
+.promo {
+  background-image: url(comb.jpg);
+  text-align: left;
+  background-size: 100%;
+  background-position-y: 20%;
+}
+section {
+  display: flex;
+
+  margin-top: 1rem;
+  gap: 1.5%;
+  text-align: center;
+}
+
+article {
+  flex: 1;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #0e0d0d;
+}
+
+article > img {
+  border-radius: 20px;
+  display: inline-block;
+  width: 90%;
+  height: auto;
+}
+
+footer {
+  margin-top: 2rem;
+  display: flex;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer h3 {
+  color: white;
+  text-align: right;
+}
+
+/*Media query */
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+  article {
+    width: 100%;
+  }
+}
