@@ -14,30 +14,9 @@ h1 {
   font-weight: bold;
   padding: 1.5rem 1.5rem;
   text-transform: uppercase;
-  background: linear-gradient(
-    to right,
-    hsl(0, 1%, 35%) 0,
-    hsl(60, 2%, 35%) 10%,
-    hsl(0, 100%, 100%) 20%
-  );
-  -webkit-background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #fcfcfc,
+    0 0 20px #aeafb1, 0 0 25px #000000, 0 0 30px #000000, 0 0 35px #040404;
 }
-
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 300px;
-  }
-  100% {
-    background-position: 345px;
-  }
-}
-
 h4 {
   background-color: black;
 
@@ -57,13 +36,12 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 60%;
   height: auto;
 }
 
 .footerLogo {
-  max-width: 15%;
-  max-height: auto;
+  max-width: 20%;
 }
 
 nav ul {
@@ -105,7 +83,6 @@ a:hover {
 section {
   display: flex;
 
-  margin-top: 1rem;
   gap: 1.5%;
   text-align: center;
 }
@@ -117,7 +94,9 @@ article {
   border-radius: 20px;
   padding-left: 1%;
   padding-right: 1%;
+  padding-bottom: 2%;
   background-color: #0e0d0d;
+  margin-bottom: 1rem;
 }
 
 article > img {
@@ -128,8 +107,7 @@ article > img {
 }
 
 footer {
-  margin-top: 2rem;
-  display: flex;
+  display: inline-flex;
 }
 
 footer div {
